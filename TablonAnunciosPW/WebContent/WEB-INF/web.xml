@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>TablonAnunciosPW</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <context-param>
+  	<param-name>jdbc</param-name>
+  	<param-value>jdbc:mysql://oraclepr.uco.es:3306/i82gaarj</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>db-user</param-name>
+  	<param-value>i82gaarj</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>db-pass</param-name>
+  	<param-value>PW202021</param-value>
+  </context-param>
+  
+  <context-param>
+  	<param-name>login-servlet</param-name>
+  	<param-value>/loginServlet</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>register-servlet</param-name>
+  	<param-value>/registerServlet</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>update-user-servlet</param-name>
+  	<param-value>/updateUserServlet</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>saveAdServlet</param-name>
+  	<param-value>/saveAdServlet</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>propertiesPath</param-name>
+  	<param-value>/WEB-INF/sql.properties</param-value>
+  </context-param>
+</web-app>
